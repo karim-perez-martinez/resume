@@ -270,4 +270,7 @@ bottom: 0;
         padding-left: 10px;
         width: 70%;
     }
+    .header a {
+        font-size: 1rem;           /* Adjusts the font size */
+    }
 }
