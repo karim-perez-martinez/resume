@@ -235,3 +235,39 @@ bottom: 0;
     border: none;             /* Removes the default border style */
     border-top: 1px solid #9c9797; /* Adds a custom border as the horizontal line */
   }
+
+@media (max-width:600px) {
+    .resume-section {
+        flex-direction: column;
+    }
+    .title-resume-section {
+        padding-left: 20px;
+    }
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+    .profile {
+        align-items: center;
+    }
+    .body_profile p {
+        text-align: center;
+    }
+    .title-resume-section {
+        width: 100%;
+    }
+    .frame-content-resume-section {
+        width: 100%;
+    }
+    .year {
+        text-align: right;
+        padding-right: 10px;
+        width: 30%;
+    }
+    
+    .edu-content {
+        text-align: left;
+        padding-left: 10px;
+        width: 70%;
+    }
+}
