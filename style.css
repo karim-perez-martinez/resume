@@ -49,6 +49,7 @@
     justify-content: right;   /* Centers the links horizontally */
     background-color: #fcfefe;    /* Dark background for the nav bar */
     padding: 10px 0;           /* Adds padding for spacing */   
+    align-items: center;
   }
   
   .navbar a {
