@@ -8,7 +8,11 @@
 .header {
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #fcfefe; 
 }
+
 .logo {
     display: flex;
     justify-content: left;
@@ -17,13 +21,15 @@
 .logo a {
     text-decoration: none;     /* Removes underline from links */
     color: black; 
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Adds shadow to the text */
 }
 .logo a:hover {
     color:  #f76b8a;          /* Adds hover effect for links */
   }
 #circle {
+    align-items: center;
+    justify-content: center;
     background-color: #f76b8a;
     height: 20px;
     width: 20px;
@@ -31,13 +37,18 @@
     margin-left: 0;
     margin-right: 10px;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } 
 /* Navigation Bar Styles */
 .navbar {
     display: flex;             /* Makes the navigation bar horizontal */
     justify-content: right;   /* Centers the links horizontally */
     background-color: #fcfefe;    /* Dark background for the nav bar */
-    padding: 10px 0;           /* Adds padding for spacing */
-   
+    padding: 10px 0;           /* Adds padding for spacing */   
   }
   
   .navbar a {
@@ -46,7 +57,7 @@
     /*margin: 0 15px;            /* Adds spacing between links */
     padding: 0 15px;           /* Adds spacing inside the links */
     border-right: 1px solid black;
-    font-size: 16px;           /* Adjusts the font size */
+    font-size: 1.3rem;;           /* Adjusts the font size */
   }
 
   .navbar a:last-child {
@@ -62,14 +73,14 @@
     align-items: center;
     justify-content: center;
     height: 95vh;
-    background: #fcfefe;
+    background-color: #fcfefe; 
 }
 .profile {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-basis: 400px;
+    flex-basis: 30%;
 
 }
 .profile_links {
@@ -104,10 +115,10 @@
     background-color: #eaf6f6;
 }
 .learn_more_link {
-    background-color: #c1c0b9;
+    background-color:  #f76b8a;
 }
 .contact_link{
-    background-color: #f76b8a;
+    background-color: #c1c0b9;
 }
 .image {
     border-radius: 50%;
@@ -130,7 +141,7 @@
 }
 .regular_text {
     padding: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Adds shadow to the text */
 }
 
@@ -141,12 +152,15 @@ background-color: #fcfefe;        /* Dark background */
 color: black;                  /* White text for contrast */
 padding: 0px;                 /* Adds spacing around the footer */
 text-align: center;            /* Centers content */
+position: sticky;
+bottom: 0;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .footer-links {
@@ -180,7 +194,7 @@ text-align: center;            /* Centers content */
 }
 
 .title-resume-section {
-    padding-left: 200px;
+    padding-left: 150px;
     width: 30%;
 }
 
@@ -196,7 +210,7 @@ text-align: center;            /* Centers content */
     display: flex;
     flex-direction: column;
     width: 70%;
-    padding-right: 150px;
+    padding-right: 100px;
 }
 .content-resume-section {
     display: flex;
